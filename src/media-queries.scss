@@ -1,0 +1,8 @@
+@import 'App.scss';
+
+@media (min-width: 200px) and (max-width: 450px) {
+    @include area_two_mobile();
+    @include main_mobile()
+}
+
+

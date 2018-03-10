@@ -1,0 +1,157 @@
+$title: 40px;
+$sub_title: 26px;
+
+.App {
+  /*text-align: center;*/
+}
+
+.breadcrumb {
+  height:40px;
+  padding-left:32px;
+  .item{
+    height:100%;
+    line-height:40px;
+  }
+
+}
+
+
+.banner {
+  height:544px;
+  overflow: hidden;
+  .banner_item{
+    width:100%;
+    min-width:1646px;
+    transform: translateY(-22%);
+
+  }
+
+}
+
+.banner_title{
+  position: absolute;
+  top: 36%;
+  left:6%;
+  z-index: 99;
+  color:white;
+  h1{
+    color:white;
+    font-weight:bold;
+    font-size:46px;
+  }
+  p{
+    font-size: 1.25em;
+    line-height:1.74em;
+  }
+}
+
+
+.area_two{
+  margin:24px 16px;
+  padding-top:16px;
+  display: flex;
+  justify-content: flex-start;
+  .desc{
+    flex:2;
+  }
+  .property_info{
+    padding:0 3em;
+    flex:1;
+    .button{
+    width:100%
+  }
+  }
+}
+
+@mixin area_two_mobile{
+  .area_two{
+    margin:16px 8px;
+    padding:16px;
+    display: block;
+    .property_info{
+      padding:0;
+      margin-top:12px;
+      .button{
+        width:100%
+      }
+    }
+  }
+}
+
+.main{
+  margin:32px 16px;
+
+  .left{
+    margin-right:5vw;
+    p{
+    font-size:$title;
+      margin-top:16px;
+  }
+    .menu{
+      li{
+        margin:0;
+        position:relative;
+        overflow: visible;
+      }
+    }
+  }
+  .right{
+
+    .title_container{
+      display: flex;
+      height:11vh;
+      align-items:center;
+      .icon{
+        margin-right:2vw;
+        font-size:6em;
+      }
+
+      .sub_title{
+        font-size: $sub_title;
+        margin-bottom: 0;
+      }
+    }
+    .title{
+      font-size: $title;
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+@mixin main_mobile {
+  .main{
+    margin:0 24px;
+    padding-bottom:32px;
+    .left{
+      margin-bottom:1em;
+      margin-right:0;
+      p{
+        font-size:2em;
+        margin-top:0;
+        margin-bottom:.5em;
+      }
+    }
+    .right{
+      .title_container{
+        display: flex;
+        height:11vh;
+        align-items:center;
+        margin-bottom:.5em;
+        .icon{
+          margin-right:.5em;
+          font-size:4em;
+        }
+
+        .sub_title{
+          font-size: 1.1em;
+        }
+      }
+      .title{
+        font-size: 2em;
+      }
+
+    }
+  }
+}
+

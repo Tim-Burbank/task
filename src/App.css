@@ -1,51 +1,68 @@
 .App {
-  /*text-align: center;*/
-}
+  /*text-align: center;*/ }
 
 .breadcrumb {
-  height:40px;
-  padding-left:32px;
-
-}
-
-.breadcrumb .item{
-  height:100%;
-  line-height:40px;
-}
+  height: 40px;
+  padding-left: 32px; }
+  .breadcrumb .item {
+    height: 100%;
+    line-height: 40px; }
 
 .banner {
-  height:450px
-}
+  height: 544px;
+  overflow: hidden; }
+  .banner .banner_item {
+    width: 100%;
+    min-width: 1646px;
+    transform: translateY(-22%); }
 
-.banner .banner_item{
-  height:450px;
-  min-width:1008px;
-  width:100%;
-  overflow: hidden;
+.banner_title {
+  position: absolute;
+  top: 36%;
+  left: 6%;
+  z-index: 99;
+  color: white; }
+  .banner_title h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 46px; }
+  .banner_title p {
+    font-size: 1.25em;
+    line-height: 1.74em; }
 
-}
+.area_two {
+  margin: 24px 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start; }
+  .area_two .desc {
+    flex: 2; }
+  .area_two .property_info {
+    padding-left: 3rem;
+    flex: 1; }
+    .area_two .property_info .button {
+      width: 100%; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  height: 80px; }
 
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
-}
+  color: white; }
 
 .App-title {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .App-intro {
-  font-size: large;
-}
+  font-size: large; }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=App.css.map */
