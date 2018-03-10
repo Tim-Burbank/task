@@ -12,7 +12,11 @@ $sub_title: 26px;
     height:100%;
     line-height:40px;
   }
-
+}
+@mixin breadcrumb_mobile{
+  .breadcrumb{
+    padding-left:16px;
+  }
 }
 
 
@@ -148,7 +152,7 @@ $sub_title: 26px;
         }
       }
       .title{
-        font-size: 2em;
+        font-size: 6vw;
       }
 
     }

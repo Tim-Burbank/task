@@ -100,6 +100,9 @@
       .main .right .title_container .sub_title {
         font-size: 1.1em; }
     .main .right .title {
-      font-size: 2em; } }
+      font-size: 6vw; }
+
+  .breadcrumb {
+    padding-left: 16px; } }
 
 /*# sourceMappingURL=media-queries.css.map */

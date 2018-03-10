@@ -33,7 +33,6 @@ class App extends Component {
     }
 
     componentWillMount(){
-        console.log('pppp',document.body.clientWidth)
         if(document.body.clientWidth<450){
             this.setState({isMobile:true})
         }
@@ -66,8 +65,8 @@ class App extends Component {
       }
 
       const renderFac = (fac) => {
-         return fac.map(v=>{
-              return <Col span={isMobile?12:6} style={{marginBottom:8}}><Icon type="check-square-o" style={{marginRight:8}} /> {v}</Col>
+         return fac.map((v,i)=>{
+              return <Col span={isMobile?12:6} style={{marginBottom:8}} key={i} ><Icon type="check-square-o" style={{marginRight:8}} /> {v}</Col>
           })
       }
 
