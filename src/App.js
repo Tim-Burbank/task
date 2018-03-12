@@ -91,9 +91,11 @@ class App extends Component {
                     2 Riding House Street , W1W 7FA
                   </p>
               </Row>
-              <Carousel effect="fade" className='banner' autoplay >
-                  {this.banner.map(v=><div key={v}><img src={require(`${v}`)} alt="pic1" className='banner_item' /></div>)}
-              </Carousel>
+              <Row style={{overflow:'hidden'}}>
+                  <Carousel effect="fade" className='banner' autoplay >
+                      {this.banner.map(v=><div key={v}><img src={require(`${v}`)} alt="pic1" className='banner_item' /></div>)}
+                  </Carousel>
+              </Row>
           </Row>
           <Row style={{padding:'0 16px'}} >
               <Row className='area_two'>

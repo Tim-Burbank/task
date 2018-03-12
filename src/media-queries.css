@@ -16,6 +16,9 @@
     min-width: 1646px;
     transform: translateY(-22%); }
 
+.ant-carousel .slick-initialized .slick-slide {
+  overflow: hidden; }
+
 .banner_title {
   position: absolute;
   top: 36%;
@@ -33,7 +36,6 @@
 .area_two {
   margin: 24px 16px;
   padding-top: 16px;
-  display: flex;
   justify-content: flex-start; }
   .area_two .desc {
     flex: 2; }
